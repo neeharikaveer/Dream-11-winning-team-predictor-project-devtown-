@@ -25,7 +25,7 @@ venue_mapping = {venue: idx for idx, venue in enumerate(venue_names)}
 
 @app.route('/')
 def index():
-    return render_template("index4.html", 
+    return render_template("index4.html",
                            teams=team_mapping,
                            cities=city_mapping,
                            venues=venue_mapping)
